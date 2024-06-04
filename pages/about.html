@@ -5,29 +5,14 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Capstone Final Project</title>
+    <title>About page</title>
     <link rel="stylesheet" href="../css/reset.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/test2.css">
-    
-    <!-- jQuery----->
-    <script src="scripts/jquery.min.js"></script>
-
-    <script>
-      $(document).ready(function() {
-         $(".FAQ_list p").hide();
-          
-          $(".FAQ_list h3").click(function(){
-              $(".FAQ_list p").hide();
-              $(this).siblings().show();
-          });
-          
-      }); 
-    </script>
+    <link rel="stylesheet" href="../css/test.css">
   </head>
 
 <body class="home_Body">
@@ -35,19 +20,26 @@
     <header>
 
       <section class="menuWrap">
-          <a href="index.html"><img src="../images/LaJolla_Logo_cropped.png" alt="La Jolla Volleyball Club logo" class="logo"></a>
+            <a href="../index.html"><img src="../images/LaJolla_Logo_cropped.png" alt="La Jolla Volleyball Club logo" class="logo"></a>
             <input type="checkbox" id="checkbox">
             <nav>
-                <ul>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="locations.html">Location</a></li>
-                    <li><a href="classesAndTeams.html">Classes & Teams</a></li>
-                    <li><a href="schedule.html">Schedule</a></li>
-                    <li><a href="register_prices.html">Payment & Pricing</a></li>
-                    <li><a href="FAQ.html">FAQ</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
+
+                  <ul class="outer">
+                      <li><a href="about.html">About</a></li>
+                      <li><a href="locations.html">Locations</a></li>
+                      <li><a href="classesAndTeams.html">Classes & Teams</a></li>
+                      <li><a href="schedule.html">Schedule</a></li>
+                      <li><a href="register_prices.html">Register & Pricing</a>
+                      <ul class="fly_out">
+                          <li><a href ="sign_up_form.html">Registration</a></li>
+                          <li><a href ="payment_form.html"> Payments</a></li>
+                      </ul>
+                      </li>
+                      <li><a href="FAQ.html">FAQ</a></li>
+                      <li><a href="contact.html">Contact</a></li>
+                  </ul>
+              </nav>
+
             <label for="checkbox">
                 <i class="fa-solid fa-bars menuIcon"></i>
                 <i class="fa-solid fa-xmark menuIconClose"></i>
@@ -96,7 +88,7 @@
          
           <section class="grid-box"> 
 
-            <img alt="Team member 1" class="w-32 h-32 mx-auto rounded-full mb-4" src="../images/img1.png"/>
+            <img alt="Team member 1" src="../images/img1.png"/>
             <h3>
               John Doe
             </h3>
@@ -106,16 +98,16 @@
             <p>
               With over 10 years of coaching experience, John brings expertise and passion to the team.
             </p>
-            <section class="flex justify-center space-x-4">
-              <a class="text-gray-600 hover:text-gray-800" href="#">
+            <section>
+              <a href="#">
               <i class="fab fa-facebook">
               </i>
               </a>
-              <a class="text-gray-600 hover:text-gray-800" href="#">
+              <a href="#">
               <i class="fab fa-twitter">
               </i>
               </a>
-              <a class="text-gray-600 hover:text-gray-800" href="#">
+              <a href="#">
               <i class="fab fa-instagram">
               </i>
               </a>
@@ -124,7 +116,7 @@
           
           <section class="grid-box"> 
           
-            <img alt="Team member 1" class="w-32 h-32 mx-auto rounded-full mb-4" src="../images/img8.png"/>
+            <img alt="Team member 1" src="../images/img8.png"/>
             <h3>
               Jane Smith
             </h3>
@@ -134,16 +126,16 @@
             <p>
               Jane's love for volleyball and dedication to player development make her an invaluable asset.
             </p>
-            <section class="flex justify-center space-x-4">
-              <a class="text-gray-600 hover:text-gray-800" href="#">
+            <section>
+              <a href="#">
               <i class="fab fa-facebook">
               </i>
               </a>
-              <a class="text-gray-600 hover:text-gray-800" href="#">
+              <a href="#">
               <i class="fab fa-twitter">
               </i>
               </a>
-              <a class="text-gray-600 hover:text-gray-800" href="#">
+              <a href="#">
               <i class="fab fa-instagram">
               </i>
               </a>
@@ -152,7 +144,7 @@
 
           <section class="grid-box"> 
             
-            <img alt="Team member 1" class="w-32 h-32 mx-auto rounded-full mb-4" src="../images/img2.png"/>
+            <img alt="Team member 1"  src="../images/img2.png"/>
             <h3>
               Mike Johnson
             </h3>
@@ -162,16 +154,16 @@
             <p>
               Mike's expertise in strength training helps our players reach theis full potential on the court.
             </p>
-            <section class="flex justify-center space-x-4">
-              <a class="text-gray-600 hover:text-gray-800" href="#">
+            <section>
+              <a href="#">
               <i class="fab fa-facebook">
               </i>
               </a>
-              <a class="text-gray-600 hover:text-gray-800" href="#">
+              <a href="#">
               <i class="fab fa-twitter">
               </i>
               </a>
-              <a class="text-gray-600 hover:text-gray-800" href="#">
+              <a href="#">
               <i class="fab fa-instagram">
               </i>
               </a>
@@ -180,7 +172,7 @@
 
           <section class="grid-box"> 
             
-            <img alt="Team member 1" class="w-32 h-32 mx-auto rounded-full mb-4" src="../images/img7.png"/>
+            <img alt="Team member 1"  src="../images/img7.png"/>
             <h3 class="text-xl font-bold mb-2">
               <h3>
                 Sarah Davis
@@ -191,16 +183,16 @@
               <p>
                 Sarah's guidance and support help our players develop mental toughness and resilience.
               </p>
-            <section class="flex justify-center space-x-4">
-              <a class="text-gray-600 hover:text-gray-800" href="#">
+            <section>
+              <a href="#">
               <i class="fab fa-facebook">
               </i>
               </a>
-              <a class="text-gray-600 hover:text-gray-800" href="#">
+              <a href="#">
               <i class="fab fa-twitter">
               </i>
               </a>
-              <a class="text-gray-600 hover:text-gray-800" href="#">
+              <a href="#">
               <i class="fab fa-instagram">
               </i>
               </a>
@@ -209,7 +201,7 @@
 
           <section class="grid-box"> 
             
-            <img alt="Team member 1" class="w-32 h-32 mx-auto rounded-full mb-4" src="../images/img3.png"/>
+            <img alt="Team member 1"  src="../images/img3.png"/>
             <h3>
               Mark Thompson
             </h3>
@@ -219,16 +211,16 @@
             <p>
               Drawing from over 10 years of coaching in the sport, M infuses the team with his deep knowledge and boundless enthusiasm for volleyball.
             </p>
-            <section class="flex justify-center space-x-4">
-              <a class="text-gray-600 hover:text-gray-800" href="#">
+            <section>
+              <a href="#">
               <i class="fab fa-facebook">
               </i>
               </a>
-              <a class="text-gray-600 hover:text-gray-800" href="#">
+              <a href="#">
               <i class="fab fa-twitter">
               </i>
               </a>
-              <a class="text-gray-600 hover:text-gray-800" href="#">
+              <a href="#">
               <i class="fab fa-instagram">
               </i>
               </a>
@@ -237,7 +229,7 @@
 
           <section class="grid-box">
             
-            <img alt="Team member 1" class="w-32 h-32 mx-auto rounded-full mb-4" src="../images/img4.png"/>
+            <img alt="Team member 1" src="../images/img4.png"/>
             <h3 class="text-xl font-bold mb-2">
               Emily Shen
             </h3>
@@ -247,16 +239,16 @@
             <p>
               As a seasoned volleyball coach with over a decade of experience, Emily brings a blend of expertise and fervor to the team dynamics.
             </p>
-            <section class="flex justify-center space-x-4">
-              <a class="text-gray-600 hover:text-gray-800" href="#">
+            <section>
+              <a href="#">
               <i class="fab fa-facebook">
               </i>
               </a>
-              <a class="text-gray-600 hover:text-gray-800" href="#">
+              <a href="#">
               <i class="fab fa-twitter">
               </i>
               </a>
-              <a class="text-gray-600 hover:text-gray-800" href="#">
+              <a href="#">
               <i class="fab fa-instagram">
               </i>
               </a>
@@ -265,7 +257,7 @@
 
           <section class="grid-box"> 
             
-            <img alt="Team member 1" class="w-15 h-15 mx-auto rounded-full mb-4" src="../images/img6.png"/>
+            <img alt="Team member 1" src="../images/img6.png"/>
             <h3 class="text-xl font-bold mb-2">
               Amanda Doel
             </h3>
@@ -275,16 +267,16 @@
             <p>
               Bringing over 10 years of coaching wisdom to the table, Amanda fuels the team's drive with her unparalleled passion and dedication to volleyball.
             </p>
-            <section class="flex justify-center space-x-4">
-              <a class="text-gray-600 hover:text-gray-800" href="#">
+            <section>
+              <a href="#">
               <i class="fab fa-facebook">
               </i>
               </a>
-              <a class="text-gray-600 hover:text-gray-800" href="#">
+              <a href="#">
               <i class="fab fa-twitter">
               </i>
               </a>
-              <a class="text-gray-600 hover:text-gray-800" href="#">
+              <a href="#">
               <i class="fab fa-instagram">
               </i>
               </a>
@@ -293,7 +285,7 @@
 
           <section class="grid-box"> 
             
-            <img alt="Team member 1" class="w-32 h-32 mx-auto rounded-full mb-4" src="../images/img5.png"/>
+            <img alt="Team member 1"  src="../images/img5.png"/>
             <h3 class="text-xl font-bold mb-2">
               James Kalay
             </h3>
@@ -303,16 +295,16 @@
             <p>
               With a decade-long coaching background in volleyball, James enriches the team with his extensive know-how and contagious love for the game.
             </p>
-            <section class="flex justify-center space-x-4">
-              <a class="text-gray-600 hover:text-gray-800" href="#">
+            <section>
+              <a href="#">
               <i class="fab fa-facebook">
               </i>
               </a>
-              <a class="text-gray-600 hover:text-gray-800" href="#">
+              <a href="#">
               <i class="fab fa-twitter">
               </i>
               </a>
-              <a class="text-gray-600 hover:text-gray-800" href="#">
+              <a href="#">
               <i class="fab fa-instagram">
               </i>
               </a>
@@ -349,7 +341,7 @@
             </a>
           </section>
         </article>
-        <img src="../images/Shop.png" alt="A group of volleyball players in action" class="empow_img">
+        <img src="../images/Shop.png" alt="A group of volleyball players in action" class="empow_img about_img" >
   
         <article class="benef_img">
           <h3>Join Now</h3>
@@ -360,7 +352,7 @@
             </a>
           </section>
         </article>
-        <img src="../images/Volleyball-Pass-500.jpg" alt="A volleyball player spiking the ball" class="benef">
+        <img src="../images/2.png" alt="Shop ball" class="benef about_img">
       </section>
 
       <section class="about-grid-last">            
@@ -383,25 +375,21 @@
     </main>   
 
 
-    <footer class="foot_sec">
+
+  <footer class="foot_sec">
         <p> &copy; 2024 La Jolla Volleyball Club. All rights reserved.</p>
 
         <section class="foot_ico">
-            <a class="f_ico" href="#">
-                <i class="fab fa-facebook-f"></i>
-            </a>
-            <a class="t_ico" href="#">
-                <i class="fab fa-twitter"></i>
-            </a>
-            <a class="ig_ico" href="#">
-                <i class="fab fa-instagram">
-                </i>
-            </a>
-            <a class="li_ico" href="#">
-                <i class="fab fa-linkedin-in">
-                </i>
-            </a>
+            <a class="f_ico" href="https://www.facebook.com/" target="_blank">
+                <i class="fab fa-facebook-f"></i></a>
+            <a class="t_ico" href="https://x.com/" target="_blank">
+                <i class="fab fa-twitter"></i></a>
+            <a class="ig_ico" href="https://www.instagram.com/" target="_blank">
+                <i class="fab fa-instagram" ></i></a>
+            <a class="li_ico" href="https://www.linkedin.com/" target="_blank">
+                <i class="fab fa-linkedin-in"></i></a>
         </section>
+
     </footer>
 
 </body>  
