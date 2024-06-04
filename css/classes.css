@@ -1,0 +1,64 @@
+section h2 {
+    text-align: center;
+}
+
+p {
+    max-width: 80%;
+    margin: auto;
+}
+
+
+article p {
+    max-width: 100%;
+}
+
+
+h4 {
+    font-weight: var(--fw-m);
+}
+
+ul {
+    list-style: disc;
+    text-align: justify;
+}
+
+a {
+    font-weight: var(--fw-m);
+}
+
+iframe {
+    width: 100%;
+}
+
+/* pointer for image bar */
+.girlsTeamFall_img, .girlsTeamSpring_img, .boysTeamFall_img, .boysTeamTournaments_img {
+    cursor: pointer;
+}
+
+
+@media screen and (min-width: 1000px) {
+    p, ul, h4, a {
+        font-size: calc(var(--fs-base)*1.5);
+        max-width: 1000px;
+    }
+    article {
+        max-width: 1000px;
+    }
+    
+    .imgBar {
+        max-height: 100px;
+    }
+    
+    /* content style for Girls Fall Season */
+    .girls_team .fall_season {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+    }
+    .girls_team .fall_season img {
+        max-width: 40%;
+    }
+    .girlsAllAges_img {
+        order: 1;
+    }
+}

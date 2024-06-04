@@ -1,0 +1,234 @@
+  <!DOCTYPE html>
+  <html lang="en">
+
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Capstone Final Project</title>
+      <link rel="stylesheet" href="css/reset.css">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" type="text/css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="css/test.css">
+      
+      <!-- jQuery----->
+      <script src="scripts/jquery.min.js"></script>
+
+      <script>
+        $(document).ready(function() {
+           $(".FAQ_list p").hide();
+            
+            $(".FAQ_list h3").click(function(){
+                $(".FAQ_list p").hide();
+                $(this).siblings().show();
+            });
+            
+        }); 
+      </script>
+    </head>
+
+  <body>
+
+      <header>
+
+        <section class="menuWrap">
+            <a href="index.html"><img src="images/LaJolla_Logo_cropped.png" alt="La Jolla Volleyball Club logo" class="logo"></a>
+              <input type="checkbox" id="checkbox">
+              <nav>
+                  <ul class="outer">
+                      <li><a href="pages/about.html">About</a></li>
+                      <li><a href="pages/locations.html">Locations</a></li>
+                      <li><a href="pages/ClassesAndTeams.html">Classes & Teams</a></li>
+                      <li><a href="pages/schedule.html">Schedule</a></li>
+                      <li><a href="pages/register_prices.html">Register & Pricing</a>
+                      <ul class="fly_out">
+                          <li><a href ="pages/sign_up_form.html">Registration</a></li>
+                          <li><a href ="pages/payment_form.html"> Payments</a></li>
+                      </ul>
+                      </li>
+                      <li><a href="pages/FAQ.html">FAQ</a></li>
+                      <li><a href="pages/contact.html">Contact</a></li>
+                  </ul>
+              </nav>
+              <label for="checkbox">
+                  <i class="fa-solid fa-bars menuIcon"></i>
+                  <i class="fa-solid fa-xmark menuIconClose"></i>
+              </label>
+          </section>
+          <section class="btns">
+              <a class="In_btn" href="pages/about.html">
+                  Learn More
+              </a>
+              <a class="Up_btn" href="pages/sign_up_form.html">
+                  Sign Up
+              </a>
+          </section>
+      </header>
+
+      <main>
+      <section class="hero_cta">
+          <img src="images/vbNetBallCrop2020x960Opt.jpg" alt="A volleyball in motion with a blurred background of a volleyball court" class="hero_img">
+          <h1 class="hero_h1">Experience the passion of La Jolla Volleyball</h1>
+          <p>Join our vibrant community and take your volleyball skills to the next level</p>
+
+          <section class="btns">
+              <a class="Learn_btn" href="pages/about.html">
+                  Learn More
+              </a>
+              <a class="Up_btn" href="pages/sign_up_form.html">
+                  Sign Up  
+              </a>
+          </section>
+
+      </section>
+
+     
+          <section class="first2_art">
+              <article class="empow">
+                  <h3>Empowering</h3>
+                  <h2>Building a Strong Community Through Volleyball</h2>
+                  <p>At La Jolla Volleyball, we are dedicated to fostering a supportive and inclusive community through the sport of volleyball. Our programs focus on skill development, teamwork, and personal growth, creating an environment where athletes can thrive.</p>
+              </article>
+              <img src="images/girlsuniform.png" alt="A group of volleyball players in action" class="empow_img">
+        
+              <article class="benef">
+                  <h3>Join</h3>
+                  <h2>Experience the Benefits of Joining La Jolla Volleyball</h2>
+                  <p>At La Jolla Volleyball, we offer more than just a sport. Join us to improve your fitness, develop teamwork skills, and receive professional coaching.</p>
+              </article>
+              <img src="images/Volleyball_Pass_Opt.jpg" alt="A volleyball player spiking the ball" class="benef_img">
+          </section>
+
+          <aside class="blue_Aside">
+              <section id="blue">
+                  <h1>Join Our Volleyball Classes Today!</h1>
+                  <p>Experience the thrill of volleyball and improve your skills with our expert coaches.</p>
+              
+                  <section class="btns">
+                      <a class="Learn_btn" href="pages/about.html">Learn...</a><a class="Up_btn" href="pages/sign_up_form.html">Register
+                  </a>
+                  
+                  </section>
+              </section>
+              
+              <img src="images/Join-Us500.jpg" alt="player hitting a ball" class="blue_img">
+
+          </aside>
+
+          <section class="test_sec">
+            <ul class="stars">
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+            </ul>
+
+            <p>"La Jolla Volleyball has been an incredible experience for my daughter. The coaches are knowledgeable and supportive, and she has made lifelong friends on the team."</p>
+        </section>
+        <section class="test_parent">
+            <img src="images/parent_testi.png" alt="portrait of a women" class="parent_pic">
+            <p><span>Emily Johnson</span><br>
+            Parent, HS Group</p>
+        </section>
+
+          <section class="FAQ_sec">
+              <h1>Frequently Asked Questions</h1>
+              <p>Find answers to common questions about our volleyball classes, schedules, and registration process.</p>
+
+              <ul class="FAQ_list">
+
+                  <li id="q1">
+                      <h3>What do my LJV registration fees cover?<i class="fa-solid fa-chevron-down"></i></h3>
+                      <p>Gym rentals, coaching fees, uniform, tournament entry fees, club insurance, administrative expenses, equipment, registrations. Depending on the level of team, amount of travel, or season of competition, certain teams may also receive additional uniform items and/or backpack, membership to SportsRecruits and/or Hudl, Recruiting Seminars, additional fitness workouts/practices, and/or participation medal/keepsake.</p>
+                  </li>
+                  
+                  <li id="q2">
+                      <h3>How can I register for the club?<i class="fa-solid fa-chevron-down"></i></h3>
+                      <p>You can register by filling out the registration form on our website or by visiting us during practice hours for a paper registration form.</p>
+                  </li>
+                  
+                  <li id="q3">
+                      <h3>Do I need prior volleyball experience to join?<i class="fa-solid fa-chevron-down"></i></h3>
+                      <p>No prior experience is necessary. We welcome beginners as well as experienced players.</p>
+                  </li>
+                  
+                  <li id="q4">
+                      <h3>What is the difference between a game, set and/or match?<i class="fa-solid fa-chevron-down"></i></h3>
+                      <p>Like in tennis, a volleyball match is made up of multiple sets.  A set is a single game within a match.  Younger ages and most club matches are best 2-out-of-3 sets.  Most varsity and college matches are best 3-out-of-5 sets.</p>
+                  </li>
+              </ul>
+
+              <h2>Still have questions?</h2>
+              <p>Contact us for more information</p>
+              <a class="contact_btn" href="pages/contact.html">Contact</a>
+          </section>
+
+          <section class="last_art">
+              <section id="grow_art">
+                 <article class="artic_3">
+                  <h3>Growing</h3>
+                  <h1>Join Our Club and Experience Volleyball Excellence</h1>
+                  <p>La Jolla Volleyball is a premier club that has achieved remarkable growth and success in tournaments. Our dedicated coaches and talented players have made us one of the top volleyball clubs in the region.</p>
+              </article>
+
+              <article class="art_perce">
+                  <h1>50%</h1>
+                  <p>Increase in Club Membership Over the Past Year</p>
+                  <h1>50%</h1>
+                  <p>Success Rate in Tournaments and Championships</p>
+              </article>
+            </section>
+              <img src="images/imgPercentage.png" alt="A group of volleyball players in action" class="Grow_img">
+
+          </section>
+          
+          <section class="main_last">
+              
+            <section class="newsletter">
+              <img src="images/LaJolla_Logo_cropped.png" alt="LJVC_logo" class="logo">
+              <h3>Join our newsletter</h3>
+              <p>Enter your email address below and click subscribe to be in the know for all thing La Jolla Volleyball Club!</p>
+
+              <form action="#" method="post" id="mainform" enctype="text/plain">
+                  <label for="email"></label>
+                  <section class="email_subscribe">
+                  <input type="text" id="email" name="email" placeholder="Enter your email">
+
+                  <input type="submit" class="subscribe" value="Subscribe"></section>
+                  <h4>By subscribing you agree with our <a href="#">Privacy Policy</a></h4>
+                  
+                  </form>
+          </section>
+          
+          <section class="mapWrapper">
+              <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1CC38g3LvKw8yYV5NxMqtASGgRv_QzAI&ehbc=2E312F&noprof=1" width="640" height="480">
+              </iframe>
+            </section>
+            
+          </section>
+    </main>
+         
+         
+          <footer class="foot_sec">
+        <p> &copy; 2024 La Jolla Volleyball Club. All rights reserved.</p>
+
+        <section class="foot_ico">
+            <a class="f_ico" href="https://www.facebook.com/" target="_blank">
+                <i class="fab fa-facebook-f"></i></a>
+            <a class="t_ico" href="https://x.com/" target="_blank">
+                <i class="fab fa-twitter"></i></a>
+            <a class="ig_ico" href="https://www.instagram.com/" target="_blank">
+                <i class="fab fa-instagram"></i></a>
+            <a class="li_ico" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </section>
+
+    </footer>
+
+    </body>  
+</html>  
+         
+          

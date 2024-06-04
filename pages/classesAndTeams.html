@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Class and Teams</title>
+     <link rel="stylesheet" href="../css/reset.css">
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" type="text/css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="../css/test.css">
+     
+     <!-- jQuery Statement -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <script>
+          $(document).ready(function(){
+              
+              //show/hide contents in Girls Team
+              $(".girls_team .fall_season").hide();
+              $(".girls_team .spring_season").hide();        
+              $(".girlsTeamFall_img").click(function(){
+                  $(".girls_team .fall_season").fadeToggle(300); // fadeToggle = toggle with animation.
+              });
+              $(".girlsTeamSpring_img").click(function(){
+                  $(".girls_team .spring_season").fadeToggle(300);
+              });
+              
+              // changing image when hover on Girls Fall Season
+              $(".girlsTeamFall_img").mouseover(function (e) {    
+                  $(this).attr("src", $(this).attr("src").replace("../images/girlsTeamFall_img.png", "../images/girlsTeamFall_hover_img.png"));
+              }).mouseout(function (e) {
+                  $(this).attr("src", $(this).attr("src").replace("../images/girlsTeamFall_hover_img.png", "../images/girlsTeamFall_img.png"));
+              });
+              
+              // changing image when hover on Girls Spring Season
+              $(".girlsTeamSpring_img").mouseover(function (e) {    
+                  $(this).attr("src", $(this).attr("src").replace("../images/girlsTeamSpring_img.png", "../images/girlsTeamSpring_hover_img.png"));
+              }).mouseout(function (e) {
+                  $(this).attr("src", $(this).attr("src").replace("../images/girlsTeamSpring_hover_img.png", "../images/girlsTeamSpring_img.png"));
+              });
+              
+              // changing image when hover on Boys Fall Season
+              $(".boysTeamFall_img").mouseover(function (e) {    
+                  $(this).attr("src", $(this).attr("src").replace("../images/boysTeamFall_img.png", "../images/boysTeamFall_hover_img.png"));
+              }).mouseout(function (e) {
+                  $(this).attr("src", $(this).attr("src").replace("../images/boysTeamFall_hover_img.png", "../images/boysTeamFall_img.png"));
+              });
+              
+              // changing image when hover on Boys Tournaments
+              $(".boysTeamTournaments_img").mouseover(function (e) {    
+                  $(this).attr("src", $(this).attr("src").replace("../images/boysTeamTournaments_img.png", "../images/boysTeamTournaments_hover_img.png"));
+              }).mouseout(function (e) {
+                  $(this).attr("src", $(this).attr("src").replace("../images/boysTeamTournaments_hover_img.png", "../images/boysTeamTournaments_img.png"));
+              });
+              
+              //show/hide contents in Boys Team
+              $(".boys_team .fall_season").hide();
+              $(".boys_team .tournaments").hide();        
+              $(".boysTeamFall_img").click(function(){
+                  $(".boys_team .fall_season").fadeToggle(300); // fadeToggle = toggle with animation.
+              });
+              $(".boysTeamTournaments_img").click(function(){
+                  $(".boys_team .tournaments").fadeToggle(300);
+              });
+              
+          }); // end document ready
+      </script>
+     
+    </head>
+
+    <body class="home_Body">
+     
+      <header>
+        <section class="menuWrap">
+            <a href="../index.html"><img src="../images/LaJolla_Logo_cropped.png" alt="La Jolla Volleyball Club logo" class="logo"></a>
+              <input type="checkbox" id="checkbox">
+              <nav>
+                  <ul class="outer">
+                      <li><a href="about.html">About</a></li>
+                      <li><a href="locations.html">Locations</a></li>
+                      <li><a href="ClassesAndTeams.html">Classes & Teams</a></li>
+                      <li><a href="schedule.html">Schedule</a></li>
+                      <li><a href="register_prices.html">Register & Pricing</a>
+                      <ul class="fly_out">
+                          <li><a href ="sign_up_form.html">Registration</a></li>
+                          <li><a href ="payment_form.html"> Payments</a></li>
+                      </ul>
+                      </li>
+                      <li><a href="FAQ.html">FAQ</a></li>
+                      <li><a href="contact.html">Contact</a></li>
+                  </ul>
+              </nav>
+              <label for="checkbox">
+                  <i class="fa-solid fa-bars menuIcon"></i>
+                  <i class="fa-solid fa-xmark menuIconClose"></i>
+              </label>
+          </section>
+          <section class="btns">
+              <a class="In_btn" href="about.html">
+                  Learn More
+              </a>
+              <a class="Up_btn" href="sign_up_form.html">
+                  Sign Up
+              </a>
+          </section>
+      </header>
+      
+      <main class="classAndTeams">
+        <section>
+              <!--<img src="../images/ourTeam_img.png" alt="Our Team" class="ourTeam_img">-->
+              <article class="classAndTeams_title">
+                 <h1 class="hero_h1">Classes and Teams</h1>
+                 <p>Explore our wide range of classes and Teams for all skill levels and ages.</p>            
+             </article>
+        </section>
+          
+        <!-- Girls Team -->
+        <section class="girls_team">
+            
+             <article class="girls_team_title">
+                <img src="../images/girlsTeam_img.png" alt="Girls Team" class="girlsTeam_img">
+                <div>
+                   <h2>Girls Team</h2>
+                   <p>We offer two INDOOR seasons for teams: Fall (short/mini-season) and Spring (longer typical club season):</p>
+                </div>
+             </article>
+             
+             <!-- Girls Team fall season -->
+             <img src="../images/girlsTeamFall_img.png" alt="Girls Team Fall" class="girlsTeamFall_img imgBar">
+             <article class="girls_team fall_season">
+                
+                 <!-- Girls Team fall season 5th-8th grade -->
+                 <img src="../images/girlsYouth_img.png" alt="Girls Team Fall" class="girlsYouth_img">
+                 <div>
+                    <h3>FALL School teams (“mini-season”) for GIRLS in grades 5th-8th</h3>
+                     <ul>
+                         <li>tryouts in late August</li>
+                         <li>compete in 2-3 local tournaments Sep-Oct</li>
+                         <li>compete against other middle school teams</li>
+                     </ul>
+                 </div>
+             </article>
+             
+             <article class="girls_team fall_season">
+                 <!-- Girls Team fall season all ages -->
+                 <img src="../images/girlsAllAges_img.png" alt="Girls Team Fall" class="girlsAllAges_img">
+                 <div>
+                    <h3>FALL Sunday Clinics for all ages/skill levels</h3>
+                    <ul>
+                     <li>2 hours each Sunday (mid-August thru September) until club tryouts in early October</li>
+                     <li>held at MBHS Gym, open to boys and girls, multiple courts and coaches</li>
+                    </ul>
+                    <p>Click on <a class="ext_links" href="#">FALL Mini-Season</a> for more details.</p>
+                 </div>
+             </article>
+             
+             <!-- Girls Team spring season -->
+             <img src="../images/girlsTeamSpring_img.png" alt="Girls Team Spring" class="girlsTeamSpring_img imgBar">
+             <article class="girls_team spring_season">
+                 <h3>SPRING Indoor Club Teams (PRIMARY club volleyball season) for all ages.</h3>
+                 <ul>
+                     <li>15s-18s (9th-12th grade) have tryouts in late July, then take a club break to play on their respective high school teams (cannot play on club vb team during same time as HS team). Tournaments December through May/June.</li>
+                     <li>10U-14U 94th-8th grade) have tryouts in early October, and start practices by early November (or sooner). Tournaments December-May/June.</li>
+                     <li>“Local” teams compete in series of 6-7 local tournaments in Rancho Bernardo (Volley-Fest tournament series); focus on development; less competitive (and less expensive).</li>
+                     <li>“Travel” teams compete in SCVA tournaments throughout Southern California (generally higher level of play & bigger commitment and more expensive), and some out-of-state tournaments as well, depending on team (13U-18U)</li>
+                 </ul>
+             </article>
+          </section>
+          
+        <!-- Boys Team -->
+          <section class="boys_team">
+             <article>
+                 <img src="../images/boysTeam_img.jpg" alt="Boys Team" class="boysTeam_img">
+             <h2>Boys Team</h2>
+             </article>
+             
+             <!-- Boys Team tryouts -->
+             <article class="boys_team tryouts">
+                 <p>TRYOUTS:  $30 tryouts fee and online registration required prior to participation.  Register for <a class="ext_links" href="#">Sunday Clinic</a> as your boys tryouts registration, please.</p>
+                 <p>If interested in LJV Boys team, please send an email to <a class="ext_links email" href="#">LJV/Bill</a></p>
+                 <ul>
+                     <li>Sunday Sept 8th 4:00-6:00pm at LJHS – all ages!</li>
+                     <li>Sunday Sept 13th 4:00-6:00pm at LJHS – all ages!…  need more boys!</li>
+                 </ul>
+             </article>
+                
+             <!-- Boys Team fall season -->
+             <img src="../images/boysTeamFall_img.png" alt="Boys Team Fall" class="boysTeamFall_img imgBar">
+             <article class="boys_team fall_season">
+                 <h3>Fall Local Season:  approx. 5-6 practices/month, 5 local tournaments in Rancho Bernardo at Seaside VBC (SDVBC) Oct 6th – Dec 8th (dates listed below)</h3>
+                 <a class="ext_links" href="#">https://www.sdvbc.org/seaside-locals</a>
+                 
+                 <p>Cost for Local Season:  $885 (plus $30 tryouts/clinic fee; required), season fees include uniforms, coaching, gym rental fees, tournament entries, equipment, insurance.  Payment plan option at time of registration.  Possibility of modifying team/season structure based on players ages/abilities. (cost is same as Fall 2018)</p>
+                 
+                 <p>Ages: mostly middle school players, competing in 14U division.  Will enter two teams for tournaments if enough boys are available each tournament.  younger players will compete in 12U division if tournament has enough younger teams. Scrimmages possible, TBD.  Will form HS-age team (16U) if enough boys!</p>
+                 
+                 <p>Travel Team: We will form a travel team for HS-age players, to compete in 16U division</p>
+                 
+                 <h3>Practices:</h3>
+                 <ul>
+                        <li>Sundays at La Jolla High School (LJHS) gym 4:00-6:00pm</li>
+                        <li>Wednesdays or Thursdays at The Salvation Army (TSA) gym  7:00-9:00pm (check LJV calendar)</li>
+                 </ul>
+             </article>
+             
+             <!-- Boys Team tournaments -->
+             <img src="../images/boysTeamTournaments_img.png" alt="Girls Team Tournaments" class="boysTeamTournaments_img imgBar">
+             <article class="boys_team tournaments">
+                 <h3>Local Tournaments for Fall 2019, 14U and younger (Locals):</h3>
+                 <ul>
+                             <li>Sunday Oct 6  (PM wave 2:30-8pm)</li>
+                             <li>Sunday Oct 13  (PM wave 2:30-8pm)</li>
+                             <li>Sunday Oct 27  (PM wave 2:30-8pm)</li>
+                             <li>Saturday Nov 16  (PM wave 2:30-8pm)</li>
+                             <li>Sunday Dec 8  (PM wave 2:30-8pm)</li>
+                 </ul>
+                 <h3>Boys LOCAL tournaments at <a class="ext_links" href="#">Seaside/San Diego Volleyball Club</a> in Rancho Bernardo</h3>
+                 <a class="ext_links" href="#">Travel (SCVA) Tournaments for Fall 2019 (click for SCVA link)</a>
+                 <ul>
+                     <li>Boys 14U Travel/SCVA tournaments run Nov 17th through June</li>
+                     <li>Boys 16/18s (HS-ages) travel/SCVA tournaments  runs Oct 20th through Jan 13th, then again May 25th – end of June (split season break to accommodate indoor HS boys season February-April).</li>
+                 </ul>
+                 <p>Boys TRAVEL tournaments typically occur in Anaheim at American Sports Center (ASC).</p>
+             </article>
+          </section>
+        </main>
+         
+         
+        <footer class="foot_sec">
+            <p> &copy; 2024 La Jolla Volleyball Club. All rights reserved.</p>
+
+            <section class="foot_ico">
+                <a class="f_ico" href="https://www.facebook.com/" target="_blank">
+                <i class="fab fa-facebook-f"></i></a>
+                <a class="t_ico" href="https://x.com/" target="_blank">
+                <i class="fab fa-twitter"></i></a>
+                <a class="ig_ico" href="https://www.instagram.com/" target="_blank">
+                <i class="fab fa-instagram"></i></a>
+                <a class="li_ico" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </section>
+
+        </footer>
+    </body>  
+</html>  
+         
+          
