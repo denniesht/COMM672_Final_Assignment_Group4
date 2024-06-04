@@ -64,23 +64,23 @@
 
 <section class="contact_form">
     <form action="mailto:csherndon@yahoo.com" method="post" id="saveForm" class="contact_form">
-        
+        <p>Fields indicated with an asterick * are required.</p>
         <fieldset id="contact_info">                
             <section class="form-grid">    
                 
-            <label for="lname">Student Name </label>
+            <label for="lname">Student Name *</label>
             <input type="text" id="lname" name="lname" value="" required placeholder="First Name" type="text"/>
 
             
-            <label for="email">Last Name </label>
+            <label for="email">Last Name * </label>
             <input type="email" id="email" name="email" value="" required placeholder="Last Name" type="text">
 
             
-            <label for="lname">Student ID </label>
+            <label for="lname">Student ID *</label>
             <input type="text" id="lname" name="lname" value="" required placeholder="Student ID" type="text">
 
             
-            <label for="email">Email </label>
+            <label for="email">Email *</label>
             <input type="email" id="email" name="email" value="" required placeholder="email@example.com" type="text">
 
             
@@ -88,14 +88,14 @@
             <input type="tel" id="phone" name="phone" value="" placeholder="(000) 000-0000" type="number">
 
             
-            <label for="lname">Parent/Guardian Name </label>
+            <label for="lname">Parent/Guardian Name *</label>
             <input type="text" id="lname" name="lname" value="" required placeholder="First Name" type="text"/>
 
             
-            <label for="email">Parent/Guardian Last Name </label>
+            <label for="email">Parent/Guardian Last Name *</label>
             <input type="email" id="email" name="email" value="" required placeholder="Last Name" type="text">
 
-            <label for="email">Parent/Guardian Email </label>
+            <label for="email">Parent/Guardian Email *</label>
             <input type="email" id="email" name="email" value="" required placeholder="email@example.com" type="text">
 
             <label for="phone">Parent/Guardian Phone </label>
@@ -149,19 +149,19 @@
             <legend>Billing Address</legend>                
             <section class="form-grid">    
             
-                <label for="lname">Full Name </label>
+                <label for="lname">Full Name * </label>
                 <input type="text" id="lname" name="lname" value="" required placeholder="Enter name" type="text"/>
 
                 
-                <label for="email">Email </label>
+                <label for="email">Email *</label>
                 <input type="email" id="email" name="email" value="" required placeholder="Enter email" type="text">
 
                 
-                <label for="lname">Address </label>
+                <label for="lname">Address *</label>
                 <input type="text" id="lname" name="lname" value="" required placeholder="Enter adress" type="text">
 
                 
-                <label for="email">City </label>
+                <label for="email">City *</label>
                 <input type="email" id="email" name="email" value="" required placeholder="Enter City" type="text">
 
                 
@@ -169,7 +169,7 @@
                 <input type="tel" id="phone" name="phone" value="" placeholder="Zip code" type="number">
 
                 
-                <label for="lname">State </label>
+                <label for="lname">State *</label>
                 <input type="text" id="lname" name="lname" value="" required placeholder="State" type="text"/>
 
             </section>
@@ -182,12 +182,12 @@
 
             <label for="phone">Accepted Card</label>
 
-            </br>
+            <br>
             <img src="../images/payment%20logo.png" alt="LJVC_logo" class="logo"> 
-            </br>
+            <br>
 
             <section class="plans form-grid">
-                <label for="email">Credit Card Number </label>
+                <label for="email">Credit Card Number *</label>
                 <input type="email" id="email" name="email" value="" required placeholder="Enter card number" type="text">
 
                 <label for="phone">Expration Month </label>
@@ -214,7 +214,7 @@
 <section class="newsletter">
     <img src="../images/LaJolla_Logo_cropped.png" alt="LJVC_logo" class="logo">
     <h3>Join our newsletter</h3>
-    <p>Enter your email address below and click subscribe to be in the know for all thing La Jolla Volleyball Club!</p>
+    <p>Enter your email address below and click subscribe to be in the know for all things La Jolla Volleyball Club!</p>
 
     <form action="#" method="post" id="mainform" enctype="text/plain">
         <label for="email"></label>
@@ -222,7 +222,7 @@
         <input type="text" id="email" name="email" placeholder="Enter your email">
 
         <input type="submit" class="subscribe" value="Subscribe"></section>
-        <h4>By subscribing you agree to with our <a href="#">Privacy Policy</a></h4>
+        <h4 id="center_policy">By subscribing you agree to with our <a href="#">Privacy Policy</a></h4>
         
     </form>  
 </section>
