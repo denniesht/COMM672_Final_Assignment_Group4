@@ -38,6 +38,7 @@ body {
 }
 
 header {
+    position: fixed; /* added by Hong */
     background-color: var(--neutral-lt-color);
     padding: var(--spacer);
     border-bottom: solid 10px var(--primary-color);
