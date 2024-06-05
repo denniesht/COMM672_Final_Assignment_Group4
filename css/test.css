@@ -742,13 +742,12 @@ input[type=email]:valid {
 .girls_team {
     margin-bottom: var(--spacer);
 }
-/end of styling for Class&Teams page/
+/* end of styling for Class&Teams page */
 
 /* styling for Schedule page */
 .classAndTeams_title p, .main_schedule p {
     text-align: center;
 }
-
 .girls_schedule, .boys_schedule {
     width: 200px;
     margin-bottom: calc(var(--spacer)*2);
@@ -931,7 +930,7 @@ text-decoration: none;
 
 .payment_grid {
     display: grid;
-    grid-template-columns: repeat(4fr, 1fr);
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .proceed_to_checkout_btn {
