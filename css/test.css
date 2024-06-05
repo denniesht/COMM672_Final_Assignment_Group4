@@ -748,6 +748,7 @@ input[type=email]:valid {
 .classAndTeams_title p, .main_schedule p {
     text-align: center;
 }
+
 .girls_schedule, .boys_schedule {
     width: 200px;
     margin-bottom: calc(var(--spacer)*2);
