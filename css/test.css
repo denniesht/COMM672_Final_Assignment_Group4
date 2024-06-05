@@ -1,3 +1,28 @@
+/*---------------------------
+        TABLE OF CONTENTS
+------------------------------
+        1. Global variables (typography, colors, helpers)
+        2. Body, Header
+        3. menu, Nav, fly-out, hamburger
+        4. Hero
+        5. Aside
+        6. Testimonal section
+        7. FAQ
+        8. Buttons
+        9. Last homepage article
+        10.Newsletter
+        11.Map
+        12.Chris' pages
+        13.Footer
+        14.Hong's pages
+        15.Ceren's pages
+        16.Cindy's pages
+        17.Media queries
+-------------------------------------------*/
+/* 7 different selectors used in this project. Search on "selector" to have them identified *
+
+/*1. Global variables (typography, colors, helpers)*/
+
 /* Global variables */
 :root {
     /* typography */
@@ -24,6 +49,8 @@
     --shadow: 2px 2px 6px rgba(0, 0, 0, .3);
 }
 
+/*2. Body, Header*/
+
 body {
 
     background-color: var(--neutral-lt-color);
@@ -45,6 +72,7 @@ header {
     width: 100%;
 }
 
+/*3. menu, Nav, fly-out, hamburger and main*/
 
 main {
     margin: auto;
@@ -57,6 +85,7 @@ article {
     max-width: 80%;
     margin: auto;
 }
+
 
 h1,
 h2,
@@ -92,11 +121,11 @@ h3 {
     font-weight: 600;
 }
 
+/*1. p is an element selector*/
 p {
     font-family: var(--primary-font);
     font-size: calc(var(--fs-base)* 1.1);
     margin: var(--spacer) 0;
-
 }
 
 img {
@@ -105,7 +134,7 @@ img {
     box-shadow: var(--shadow);
 }
 
-
+/*2. .logo is a class selector*/
 .logo {
     width: 180px;
     box-shadow: none;
@@ -132,6 +161,8 @@ nav {
     width: 200px;
     background-color: var(--primary-color);
 }
+
+/*3. nav ul.outer is a descendent selector*/
 
 nav ul.outer {
     max-height: 0;
@@ -163,11 +194,12 @@ nav ul a:hover {
     border-bottom: none;
 }
 
+/*4. .fly_out li a::before pseudo element*/
+
 .fly_out li a::before {
     content: "> ";
     margin-left: 10px;
 }
-
 
 
 /*-----hamburger and close X ---------*/
@@ -186,6 +218,8 @@ nav ul a:hover {
     display: none;
 }
 
+/*6. #checkbox:checked ~ nav ul.outer is a sibiling selector*/
+
 #checkbox:checked ~ nav ul.outer {
     display: block;
     max-height: 640px;
@@ -200,7 +234,7 @@ nav ul a:hover {
     display: block;
 }
 
-
+/*4. Hero*/
 
 /*-------- hero cta-------*/
 .hero_cta {
@@ -232,7 +266,7 @@ nav ul a:hover {
     
 }
 
-
+/*   5. Aside*/
 
 /*-----aside-------*/
 
@@ -250,6 +284,8 @@ nav ul a:hover {
     /*    padding: calc(var(--spacer)* 2);    */
 
 }
+
+/*5. #blue is an id selector*/
 
 #blue {
     border: solid 1px var(--accent-color);
@@ -278,6 +314,8 @@ nav ul a:hover {
     width: 100%;
     margin-top: 20px;
 }
+
+/*6. Testimonal section*/
 
 /*-------testimonial section-----------*/
 
@@ -327,6 +365,8 @@ nav ul a:hover {
     font-weight: var(--fw-b);
 }
 
+
+/* 7. FAQ*/
 /*-------FAQ section-----*/
 
 .FAQ_sec h1 {
@@ -392,6 +432,9 @@ nav ul a:hover {
     margin-bottom: 70px;
 }
 
+/* 8. Buttons*/
+/*---- General buttons------*/
+
 .contact_btn {
 
     border: solid 1px var(--text-color);
@@ -406,8 +449,6 @@ nav ul a:hover {
     margin: auto;
     color: var(--primary-color);
 }
-
-/*---- General buttons------*/
 
 .btns {
     display: flex;
@@ -452,6 +493,7 @@ nav ul a:hover {
 
 }
 
+/*9. Last homepage article*/
 /*------Last article---------*/
 .last_art {
     margin-top: 50px;
@@ -466,6 +508,7 @@ nav ul a:hover {
     margin-bottom: 60px;
 }
 
+/*10.Newsletter*/
 /*----------- Newsletter -------------*/
 
 .newsletter .logo {
@@ -516,6 +559,8 @@ nav ul a:hover {
     text-align: center;
 }
 
+/* 11.Map*/
+
 /*-----------Map-------------*/
 .mapWrapper {
     position: relative;
@@ -533,7 +578,33 @@ nav ul a:hover {
     height: 100%;
 }
 
+/*12.Footer*/
+
+/*----------footer-----------*/
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-weight: 400;
+    text-align: center;
+    padding: .5em 0 1.8em;
+    margin-top: 0;
+    border-top: solid 10px var(--accent-color);
+}
+
+footer p {
+    font-size: 15px;
+}
+
+.foot_ico a {
+    color: var(--text-color);
+    padding: calc(var(--spacer) / 2);
+    text-decoration: none;
+}
+
+
 /*-------Chris' form and location page--------*/
+
+/* 13.Chris' pages*/
 
 .pink_girls {
     margin-top: 20px;
@@ -611,6 +682,16 @@ nav ul a:hover {
     font-weight: var(--fw-m);
 }
 
+/*valid and invalid selector for the form*/
+
+input[type=email]:invalid {
+  outline: red solid 1px;
+}
+ 
+input[type=email]:valid {
+  outline: lightgreen solid 1px;
+}
+
 #question {
     font-size: 18px;
     color: var(--primary-color);
@@ -638,27 +719,7 @@ nav ul a:hover {
     margin: calc(var(--spacer)*2);
 }
 
-/*----------footer-----------*/
-footer {
-    background-color: var(--primary-color);
-    color: var(--text-color);
-    font-weight: 400;
-    text-align: center;
-    padding: .5em 0 1.8em;
-    margin-top: 0;
-    border-top: solid 10px var(--accent-color);
-
-}
-
-footer p {
-    font-size: 15px;
-}
-
-.foot_ico a {
-    color: var(--text-color);
-    padding: calc(var(--spacer) / 2);
-    text-decoration: none;
-}
+/*14.Hong's pages*/
 
 /*--------------------Hong's CSS---------------*/
 
@@ -697,6 +758,7 @@ footer p {
 
 /*-------------------------------End Hong's CSS---------------*/
 
+/*15.Ceren's pages*/
 /*---------------------------Ceren's CSS--------------------------*/
 
 .grid-container {
@@ -707,10 +769,18 @@ margin-top: 80px;
 position: relative;
 }
 
+.payment_form fieldset {
+    min-width: 430px;
+}
+
+.member_form {
+    max-width: 100%;
+}
+
        
 
 .grid-box {
-    color: black;
+    color: var(--text-color);
     padding: 10px;
     box-shadow: var(--shadow);
     text-align: left;
@@ -774,7 +844,7 @@ position: relative;
     border-bottom: solid 2px var(--neutral-lt-color);
     border-top: solid 2px var(--neutral-lt-color);    
     margin: auto;
-    padding: 60px;
+    padding: 40px;
 }
 
 .meet-our-team {
@@ -783,11 +853,29 @@ position: relative;
     /*padding: 40px;*/
     border: solid 2px rgb(247, 243, 243);
     margin-top: auto;
-    box-shadow: 10px 10px 8px #888888;
+    box-shadow: 10px 10px 8px var(--neutral-dk-color);
     max-width: 1000px;
-    margin: 2px;
+    margin: auto;
     padding: 50px;
 
+}
+
+.about_img {
+        width: 100%;
+        height: auto;
+        box-shadow: var(--shadow);
+        margin: 20px;
+    
+}
+
+.fab {
+-webkit-font-smoothing: antialiased;
+display: var(--fa-display, inline-block);
+font-style: normal;
+font-variant: normal;
+line-height: 1;
+text-rendering: auto;
+text-decoration: none;
 }
 
 .grid_registration {
@@ -825,7 +913,7 @@ position: relative;
 .form-input {
     width: 100%; 
     padding: 0.5rem;
-    border: 1px solid #ccc;
+    border: 1px solid var(--neutral-lt-color);
     border-radius: 0.25rem;
     display: block;
     clear: both;
@@ -858,17 +946,17 @@ position: relative;
     justify-content: center;
     margin: auto;
     color: var(--neutral-lt-color);
-    background-color: #0077BE; 
+    background-color: var(--primary-color); 
     margin-bottom: 20px;
 }
+
 /*------------------------End Ceren's Code--------------------------*/
 
 
+/*16.Cindy's pages*/
+/*----------------Cindy's CSS---------------*/
 
-/*------------------------Cindy's CSS----------------------------*/
-
-/*_____________prices & Registration CSS_____________*/
-
+/*________prices & Registration CSS___________*/
 
 
 /*------------Price hero---------*/
@@ -1086,7 +1174,7 @@ position: relative;
 /*-----------------------End Cindy's Code--------------------------*/
 
 
-
+/*17.Media queries*/
 
 /*------Media Queries------------*/
 
@@ -1140,6 +1228,8 @@ position: relative;
         border-bottom: none;
     }
 
+/*    7. nav ul.outer > a:hover is a child selector*/
+    
     nav ul.outer > a:hover {
         background-color: var(--neutral-lt-color);
         color: var(--accent-color);
@@ -1372,8 +1462,16 @@ position: relative;
         margin-top: 80px;
         position: relative;
         }
+/*
+    .member_form {
+        max-width: 100%;
+    }
+*/
+    .member_blue_Aside {
+        display: block;
+        max-width: 100%;
+    }
 }
-
 
 
 @media screen and (min-width: 1360px) {
